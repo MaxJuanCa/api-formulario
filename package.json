@@ -2,7 +2,7 @@
   "name": "api-formulario-oc",
   "version": "1.0.0",
   "description": "API Test para formulario mincivil",
-  "main": "index.js",
+  "main": "apiindex.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

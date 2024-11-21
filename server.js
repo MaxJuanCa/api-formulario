@@ -10,13 +10,13 @@ app.get("/oc", (req, res) => {
     //const { numero } = req.query;
     //res.send({ oc: `orden ${numero}!` });
 
-	const filePath = path.join(__dirname, '../public/db.json');
+	const filePath = '../public/db.json';
 	fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
             console.error('Error al leer el archivo:', err);
             return res.status(500).send('Error al leer el archivo');
         }
-        res.send(`Contenido del archivo: ${data}`);
+        res.send(data);
     });
 });
 

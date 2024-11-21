@@ -4,8 +4,8 @@ const app = express();
 // A simple get greet method
 app.get("/oc", (req, res) => {
     // get the passed query
-    const { name } = req.query;
-    res.send({ msg: `Welcome ${name}!` });
+    const { numero } = req.query;
+    res.send({ oc: `orden ${numero}!` });
 });
 
 // export the app for vercel serverless functions

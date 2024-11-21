@@ -3,6 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const app = express();
+app.use(express.static('public'))
 
 // A simple get greet method
 app.get("/oc", (req, res) => {
@@ -10,7 +11,7 @@ app.get("/oc", (req, res) => {
     //const { numero } = req.query;
     //res.send({ oc: `orden ${numero}!` });
 
-	const filePath = '../public/db.json';
+	const filePath =  path.join(__dirname, '../public/db.json');
 	fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
             console.error('Error al leer el archivo:', err);

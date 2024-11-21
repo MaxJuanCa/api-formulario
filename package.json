@@ -1,0 +1,15 @@
+{
+  "name": "api-formulario-oc",
+  "version": "1.0.0",
+  "description": "API Test para formulario mincivil",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.1"
+  }
+}

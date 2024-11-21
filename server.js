@@ -1,5 +1,13 @@
 const express = require("express");
+const fs = require('fs');
 const app = express();
+
+const readData = () => {
+	const data = fs.readFileSync("./db.json");
+	console.log(data);
+}
+
+readData();
 
 // A simple get greet method
 app.get("/oc", (req, res) => {

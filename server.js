@@ -1,20 +1,16 @@
 const express = require("express");
 const fs = require('fs');
+const path = require('path');
+
 const app = express();
-
-const readData = () => {
-	const data = fs.readFileSync("./db.json");
-	console.log(JSON.parse(data));
-}
-
-readData();
 
 // A simple get greet method
 app.get("/oc", (req, res) => {
     // get the passed query
     //const { numero } = req.query;
     //res.send({ oc: `orden ${numero}!` });
-	const filePath = './db.json';
+
+	const filePath = path.join(__dirname, '../public/db.json');
 	fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
             console.error('Error al leer el archivo:', err);

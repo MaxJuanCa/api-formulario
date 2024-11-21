@@ -4,7 +4,7 @@ const app = express();
 
 const readData = () => {
 	const data = fs.readFileSync("./db.json");
-	console.log(data);
+	console.log(JSON.parse(data));
 }
 
 readData();

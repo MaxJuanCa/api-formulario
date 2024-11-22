@@ -1,9 +1,21 @@
 const express = require("express");
+const cors = require('cors');
 const fs = require('fs');
 const path = require('path');
 
 const app = express();
 app.use(express.static('public'));
+
+// Configurar CORS
+app.use(cors({
+	origin: 'http://localhost:5173', // Origen permitido
+	methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
+	allowedHeaders: ['Content-Type', 'Authorization'], // Encabezados permitidos
+}));
+
+app.listen(3000, () => {
+	console.log("Escuchando");
+});
 
 const readFile = () => {
 	try {
@@ -14,10 +26,6 @@ const readFile = () => {
 		console.log(error);
 	}
 }
-
-app.listen(3000, () => {
-	console.log("Escuchando");
-})
 
 app.get("/oc", (req, res) => {
 	const data = readFile();

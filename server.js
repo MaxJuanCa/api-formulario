@@ -8,7 +8,7 @@ app.use(express.static('public'));
 
 // Configurar CORS
 app.use(cors({
-	origin: 'http://localhost:5173', // Origen permitido
+	origin: 'https://formulario-beta3.vercel.app', // Origen permitido
 	methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
 	allowedHeaders: ['Content-Type', 'Authorization'], // Encabezados permitidos
 }));

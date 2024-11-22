@@ -6,9 +6,20 @@ const path = require('path');
 const app = express();
 app.use(express.static('public'));
 
-// Configurar CORS
+const allowedOrigins = [
+	'https://formulario-beta3.vercel.app',
+	'http://localhost:3000', // Otro dominio permitido
+];
+
 app.use(cors({
-	origin: 'https://formulario-beta3.vercel.app', // Origen permitido
+	origin: function (origin, callback) {
+		// Permitir solicitudes sin origen (por ejemplo, en herramientas como Postman)
+		if (!origin || allowedOrigins.includes(origin)) {
+			callback(null, true); // Solicitud permitida
+		} else {
+			callback(new Error('No permitido por CORS')); // Bloquear otros orígenes
+		}
+	},
 	methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
 	allowedHeaders: ['Content-Type', 'Authorization'], // Encabezados permitidos
 }));

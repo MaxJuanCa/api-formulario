@@ -8,7 +8,7 @@ app.use(express.static('public'));
 
 const allowedOrigins = [
 	'https://formulario-beta3.vercel.app',
-	'http://localhost:3000', // Otro dominio permitido
+	'http://localhost:5173', // Otro dominio permitido
 ];
 
 app.use(cors({

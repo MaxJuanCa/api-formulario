@@ -40,8 +40,8 @@ const readFile = () => {
 
 app.get("/oc", (req, res) => {
 	const id = req.query.id;
-	console.log(id);
 	const data = readFile();
+	data.Encabezado.id = id;
 	res.json(data);
 });
 

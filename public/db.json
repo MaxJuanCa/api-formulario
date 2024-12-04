@@ -22,6 +22,27 @@
 	},
 	{
 		"encabezado": {
+			"ordenCompra": "M-PC0022255",
+			"estadoAprobacion": "Rechazado",
+			"estado": "Cancelado",
+			"estadoDocumento": "Albarán",
+			"fecha": "2018-01-29",
+			"fechaConta": "2018-01-29",
+			"proveedor": "GVT S.A.S",
+			"proveedorNit": "900673967",
+			"entregarEn": "Taller La Caro",
+			"monto": "0.00",
+			"impuesto": "0.00",
+			"total": "0.00",
+			"moneda": "COP",
+			"proveedorTelefono": "NA",
+			"proveedorEmail": "tatianaortiz.gvt@gmail.com;contador.gvt@gmail.com",
+			"proveedorDireccion": "CRA 1 NO. 1 - 28\n6830768COL",
+			"fechaEntrega": "2018-01-29"
+		}
+	},
+	{
+		"encabezado": {
 			"ordenCompra": "M-PC0000007",
 			"estadoAprobacion": "Confirmado",
 			"estado": "Facturado",
@@ -38,6 +59,90 @@
 			"proveedorTelefono": "3184634946",
 			"proveedorEmail": "carlos_donoso@gecolsa.com.co; juan_hernandez@gecolsa.com.co; jader_troya@gecolsa.com.co",
 			"proveedorDireccion": "AV DE LAS AMERICAS 42a 21\n1100111COL",
+			"fechaEntrega": "2017-05-09"
+		}
+	},
+	{
+		"encabezado": {
+			"ordenCompra": "M-PC0001740",
+			"estadoAprobacion": "Confirmado",
+			"estado": "Pedido abierto",
+			"estadoDocumento": "Albarán",
+			"fecha": "2017-05-29",
+			"fechaConta": "2017-05-29",
+			"proveedor": "COLMEDICOS SA",
+			"proveedorNit": "800049104",
+			"entregarEn": "OC Escuela de Minas",
+			"monto": "1036801.00",
+			"impuesto": "-25920.00",
+			"total": "1010881.00",
+			"moneda": "COP",
+			"proveedorTelefono": "2222222",
+			"proveedorEmail": "cartera@colmedicos.com;gestion.cartera@colmedicos.com;david.ortega@colmedicos.com;auxiliar.cartera9@colmedicos.com",
+			"proveedorDireccion": "CL 50 46 36 P 14 ED FURATENA\n0500105col",
+			"fechaEntrega": "2017-05-29"
+		}
+	},
+	{
+		"encabezado": {
+			"ordenCompra": "M-PC0002503",
+			"estadoAprobacion": "Confirmado",
+			"estado": "Recibido",
+			"estadoDocumento": "Albarán",
+			"fecha": "2017-06-07",
+			"fechaConta": "2017-06-07",
+			"proveedor": "GECOLSA S.A.",
+			"proveedorNit": "860002576",
+			"entregarEn": "B Principal Grupo ejecutor Mincivil - SP",
+			"monto": "9200947.00",
+			"impuesto": "1748180.00",
+			"total": "10949127.00",
+			"moneda": "COP",
+			"proveedorTelefono": "3184634946",
+			"proveedorEmail": "carlos_donoso@gecolsa.com.co; juan_hernandez@gecolsa.com.co; jader_troya@gecolsa.com.co",
+			"proveedorDireccion": "AV DE LAS AMERICAS 42a 21\n1100111COL",
+			"fechaEntrega": "2017-06-07"
+		}
+	},
+	{
+		"encabezado": {
+			"ordenCompra": "M-PC0001868",
+			"estadoAprobacion": "Confirmado",
+			"estado": "Recibido",
+			"estadoDocumento": "Factura",
+			"fecha": "2017-05-30",
+			"fechaConta": "2017-05-30",
+			"proveedor": "GVT SAS",
+			"proveedorNit": "900673967",
+			"entregarEn": "B Principal Planta Agregados Girardota",
+			"monto": "2800000.00",
+			"impuesto": "-28000.00",
+			"total": "2772000.00",
+			"moneda": "COP",
+			"proveedorTelefono": "NA",
+			"proveedorEmail": "tatianaortiz.gvt@gmail.com;contador.gvt@gmail.com",
+			"proveedorDireccion": "CRA 1 NO. 1 - 28\n6830768COL",
+			"fechaEntrega": "2017-05-30"
+		}
+	},
+	{
+		"encabezado": {
+			"ordenCompra": "M-PC0000028",
+			"estadoAprobacion": "Confirmado",
+			"estado": "Cancelado",
+			"estadoDocumento": "Pedido de compra",
+			"fecha": "2017-05-09",
+			"fechaConta": "2017-05-09",
+			"proveedor": "METALES ESTRUCTURALES LTDA",
+			"proveedorNit": "830075260",
+			"entregarEn": "Insumos Tramo 1 GICA",
+			"monto": "0.00",
+			"impuesto": "0.00",
+			"total": "0.00",
+			"moneda": "COP",
+			"proveedorTelefono": "2012054",
+			"proveedorEmail": "cuentas@metales.co,contabilidad@metales.co",
+			"proveedorDireccion": "CALLE 8 No 29 44\n1100111COL",
 			"fechaEntrega": "2017-05-09"
 		}
 	}

@@ -54,7 +54,7 @@ app.get("/Values", (req, res) => {
 	const pdf = req.query.pdf;
 	console.log(`Parametro pdf: ${pdf}`);
 	const encabezadoData = readFile();
-	const ocFiltrada = encabezadoData.find(item => item.encabezado.ordenCompra === id);
+	let ocFiltrada = encabezadoData.find(item => item.encabezado.ordenCompra === id);
 	console.log(ocFiltrada);
 	const response = ocFiltrada;
 	if (!ocFiltrada) {
